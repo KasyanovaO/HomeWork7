@@ -45,8 +45,14 @@ class Program
                 average = Math.Round((sum / array.GetLength(0)), 1);
             }
 
-            Console.Write(average+"; ");
-           
+            if (j == array.GetLength(1) - 1)
+            {
+                Console.Write(average + ".");
+            }
+            else
+            {
+                Console.Write(average + "; ");
+            }
         }
     }
 }
