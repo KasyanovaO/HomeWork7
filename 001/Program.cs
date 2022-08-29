@@ -13,7 +13,7 @@ class Program
         {
             for (int j = 0; j < arr.GetLength(1); j++)
             {
-                arr[i, j] = Convert.ToDouble(new Random().NextDouble() * 10 - 5);
+                arr[i, j] = Convert.ToDouble(new Random().NextDouble()*20-10);
             }
         }
     }
